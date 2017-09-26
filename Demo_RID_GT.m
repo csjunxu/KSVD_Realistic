@@ -56,6 +56,7 @@ for i = 1 : im_num
     params.maxval = 255;
     params.trainnum = 40000;
     params.iternum = 20;
+    time0 = clock;
     IMout = zeros(size(IM));
     for cc = 1:ch
         %% set parameters %%
