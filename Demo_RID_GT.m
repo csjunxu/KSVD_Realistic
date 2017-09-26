@@ -1,3 +1,5 @@
+%--------------------------------------------------------------------------
+clear;
 %KSVDDENOISEDEMO K-SVD denoising demonstration.
 %  KSVDDENISEDEMO reads an image, adds random white noise and denoises it
 %  using K-SVD denoising. The input and output PSNR are compared, and the
@@ -9,8 +11,6 @@
 addpath('ompbox10');
 pathstr = fileparts(which('ksvddenoisedemo'));
 
-%--------------------------------------------------------------------------
-clear;
 % GT_Original_image_dir = 'C:\Users\csjunxu\Desktop\CVPR2017\DJI_Results\Real_MeanImage\';
 % GT_fpath = fullfile(GT_Original_image_dir, '*.JPG');
 % TT_Original_image_dir = 'C:\Users\csjunxu\Desktop\CVPR2017\DJI_Results\Real_NoisyImage\';
@@ -35,8 +35,6 @@ TT_fpath = fullfile(TT_Original_image_dir, '*real.JPG');
 GT_im_dir  = dir(GT_fpath);
 TT_im_dir  = dir(TT_fpath);
 im_num = length(TT_im_dir);
-
-addpath 'C:\Users\csjunxu\Desktop\JunXu\Paper\Image Video Denoising\MLP CVPR2012\MLP\model';
 
 method = 'KSVD';
 write_MAT_dir = ['C:/Users/csjunxu/Desktop/CVPR2018 Denoising/PolyU_Results/'];
